@@ -98,29 +98,29 @@ body {
 
 /* Hero */
 .ec-hero {
-  padding: 2.5rem 1.25rem 2.75rem;
-  background: radial-gradient(circle at top left, #e5e7eb 0, #f9fafb 45%, #e5e7eb 100%);
+  padding: 3rem 1.25rem 3.25rem;
+  background:
+    radial-gradient(circle at top left, rgba(15, 23, 42, 0.45) 0, transparent 40%),
+    linear-gradient(to bottom, #020617 0, #020617 40%, #0b1120 70%, #020617 100%);
+  color: #e5e7eb;
 }
 
 .ec-hero-inner {
   max-width: 1120px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.5fr);
-  gap: 2rem;
-  align-items: center;
 }
 
 .ec-hero-copy h1 {
   font-size: 2.4rem;
   margin: 0 0 0.75rem;
   letter-spacing: 0.02em;
+  color: #f9fafb;
 }
 
 .ec-hero-subtitle {
   margin: 0 0 1.25rem;
   font-size: 1rem;
-  color: #4b5563;
+  color: #cbd5f5;
 }
 
 .ec-hero-cta {
@@ -132,39 +132,7 @@ body {
 
 .ec-hero-micro {
   font-size: 0.8rem;
-  color: #6b7280;
-}
-
-/* Hero card */
-.ec-hero-card {
-  background: white;
-  border-radius: 18px;
-  padding: 1.5rem 1.5rem 1.25rem;
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-}
-
-.ec-hero-card-title {
-  margin: 0 0 0.75rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-}
-
-.ec-hero-value-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 0.75rem;
-  font-size: 0.9rem;
-  color: #4b5563;
-}
-
-.ec-hero-value-list li + li {
-  margin-top: 0.5rem;
-}
-
-.ec-hero-card-foot {
-  font-size: 0.8rem;
-  color: #6b7280;
+  color: #9ca3af;
 }
 
 /* Buttons */
@@ -325,6 +293,25 @@ body {
   color: #6b7280;
 }
 
+/* Coffee visual */
+.ec-coffee-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ec-coffee-illustration {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+  margin-bottom: 0.25rem;
+  background:
+    radial-gradient(circle at 30% 30%, #fef9c3 0, #fbbf24 35%, #b45309 80%),
+    linear-gradient(to bottom, #111827 0, #020617 45%, #111827 100%);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.35);
+  align-self: flex-start;
+}
+
 /* Pricing */
 .ec-pricing-grid {
   display: grid;
@@ -445,10 +432,6 @@ body {
 
 /* Responsive tweaks */
 @media (max-width: 900px) {
-  .ec-hero-inner {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .ec-strip-inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
