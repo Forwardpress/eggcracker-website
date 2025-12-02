@@ -23,12 +23,7 @@ const App: React.FC = () => {
           </div>
 
           <nav className="ec-nav-links">
-            <a href="#how-it-works">How it works</a>
-            <a href="#value">Value</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#about">About</a>
-            <a href="#faq">FAQ</a>
-          </nav>
+           </nav>
         </div>
       </header>
 
@@ -210,7 +205,7 @@ const App: React.FC = () => {
 
               <div className="ec-card ec-card-pricing">
                 <h3>Pro+</h3>
-                <p className="ec-price">$3.99</p>
+                <p className="ec-price">coming soon</p>
                 <p className="ec-price-sub">per month</p>
                 <ul className="ec-price-features">
                   <li>Everything in Pro</li>
