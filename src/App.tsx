@@ -44,9 +44,14 @@ const App: React.FC = () => {
                 <button className="ec-btn ec-btn-primary">
                   Add Eggcracker to Chrome
                 </button>
-                <button className="ec-btn ec-btn-secondary">
+                <a
+                  href="https://buy.stripe.com/bJebJ1bLb8TU9yU9PJf7i00"
+                  className="ec-btn ec-btn-secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Try Free for 3 Days
-                </button>
+                </a>
               </div>
 
               <p className="ec-hero-micro">
@@ -174,12 +179,13 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* PRICING */}
+                {/* PRICING */}
         <section id="pricing" className="ec-section">
           <div className="ec-section-inner">
             <h2>Simple, honest pricing</h2>
 
             <div className="ec-pricing-grid">
+              {/* FREE */}
               <div className="ec-card ec-card-pricing">
                 <h3>Free</h3>
                 <p className="ec-price">$0</p>
@@ -189,8 +195,12 @@ const App: React.FC = () => {
                   <li>5 AI rewrites</li>
                   <li>No account</li>
                 </ul>
+                <button className="ec-btn ec-btn-outline">
+                  Coming soon
+                </button>
               </div>
 
+              {/* PRO – live Stripe link */}
               <div className="ec-card ec-card-pricing ec-card-featured">
                 <div className="ec-pill">Most popular</div>
                 <h3>Pro</h3>
@@ -201,17 +211,30 @@ const App: React.FC = () => {
                   <li>400 AI rewrites</li>
                   <li>Priority queue</li>
                 </ul>
+
+                <a
+                  href="https://buy.stripe.com/bJebJ1bLb8TU9yU9PJf7i00"
+                  className="ec-btn ec-btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Eggcracker Pro
+                </a>
               </div>
 
+              {/* PRO+ */}
               <div className="ec-card ec-card-pricing">
                 <h3>Pro+</h3>
-                <p className="ec-price">coming soon</p>
+                <p className="ec-price">Coming soon</p>
                 <p className="ec-price-sub">per month</p>
                 <ul className="ec-price-features">
                   <li>Everything in Pro</li>
                   <li>Unlimited AI rewrites</li>
                   <li>“Just the Facts” mode</li>
                 </ul>
+                <button className="ec-btn ec-btn-outline" disabled>
+                  Not yet available
+                </button>
               </div>
             </div>
           </div>
