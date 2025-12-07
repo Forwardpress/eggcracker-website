@@ -32,11 +32,11 @@ const App: React.FC = () => {
         <section className="ec-hero">
           <div className="ec-hero-inner">
             <div className="ec-hero-copy">
-              <h1>Clean breaks. Clear news.</h1>
+              <h1>A small price to pay for time saved.</h1>
               <p className="ec-hero-subtitle">
-                Eggcracker turns messy, ad-heavy articles into clean,
-                distraction-free reading with zero tracking and optional{" "}
-                <strong>“Just the Facts”</strong> summaries.
+                Get clear news now — Eggcracker turns messy, ad-heavy articles
+                into clean, distraction-free reading with zero tracking and
+                optional <strong>“Just the Facts”</strong> summaries.
               </p>
 
               <div className="ec-hero-cta">
@@ -145,19 +145,20 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* VALUE SECTION */}
+        {/* VALUE SECTION — QUOTES */}
         <section id="value" className="ec-section ec-section-alt">
           <div className="ec-section-inner ec-value-grid">
             <div>
-              <h2>What you get for the price of a cup of coffee</h2>
+              <h2>Time is money. Spend it well.</h2>
               <p className="ec-section-lead">
-                A calmer way to read the internet.
+                Two reminders for people who understand momentum:
               </p>
               <ul className="ec-value-list">
-                <li>Scroll and hunt for the article you like.</li>
-                <li>Click the Eggcracker logo.</li>
-                <li>Eliminate autoplay video distraction.</li>
-                <li>Read more in less time.</li>
+                <li>“Time is money.” — Benjamin Franklin</li>
+                <li>
+                  “If you spend too much time thinking, you’ll never get it
+                  done.” — Bruce Lee
+                </li>
               </ul>
             </div>
 
@@ -168,8 +169,8 @@ const App: React.FC = () => {
                 <strong>10–20 minutes saved</strong>.
               </p>
               <p>
-                Over a month → hours of reclaimed time → Informed and
-                up-to-date.
+                Over a month → hours of reclaimed time — staying informed
+                without burning out.
               </p>
             </div>
           </div>
@@ -239,7 +240,7 @@ const App: React.FC = () => {
           <div className="ec-section-inner">
             <h2>From cracking eggs to cracking noise</h2>
             <p>
-              Eggcracker began as a kitchen tool in Las Vegas in 2007. Today it
+              Eggcracker began as a kitchen tool in Las Vegas in 2007. Cracking uncooked eggs perfectly, every time. Today it
               cleans up reading articles on the internet with no eggshells.
             </p>
           </div>
