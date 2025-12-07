@@ -22,13 +22,13 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <nav className="ec-nav-links">
-           </nav>
+          <nav className="ec-nav-links">{/* reserved for links later */}</nav>
         </div>
       </header>
 
-      {/* HERO */}
+      {/* MAIN CONTENT */}
       <main>
+        {/* HERO */}
         <section className="ec-hero">
           <div className="ec-hero-inner">
             <div className="ec-hero-copy">
@@ -38,7 +38,6 @@ const App: React.FC = () => {
                 distraction-free reading with zero tracking and optional{" "}
                 <strong>“Just the Facts”</strong> summaries.
               </p>
-
 
               <div className="ec-hero-cta">
                 <button className="ec-btn ec-btn-primary">
@@ -76,9 +75,7 @@ const App: React.FC = () => {
                   <strong>Privacy:</strong> No tracking, no selling your data.
                 </li>
               </ul>
-              <p className="ec-hero-card-foot">
-               
-              </p>
+              <p className="ec-hero-card-foot"></p>
             </div>
           </div>
         </section>
@@ -100,9 +97,7 @@ const App: React.FC = () => {
             </div>
             <div className="ec-strip-item">
               <span className="ec-strip-label">⚡ Faster Reading</span>
-              <span className="ec-strip-text">
-                One click → pure text.
-              </span>
+              <span className="ec-strip-text">One click → pure text.</span>
             </div>
             <div className="ec-strip-item">
               <span className="ec-strip-label">🧠 Clarity Mode (Pro+)</span>
@@ -159,8 +154,8 @@ const App: React.FC = () => {
                 A calmer way to read the internet.
               </p>
               <ul className="ec-value-list">
-                <li>Scroll and hunt for the article you like. Click the Eggcracker logo.</li>
-                <li>Focus on meaning, not layout noise.</li>
+                <li>Scroll and hunt for the article you like.</li>
+                <li>Click the Eggcracker logo.</li>
                 <li>Eliminate autoplay video distraction.</li>
                 <li>Read more in less time.</li>
               </ul>
@@ -173,13 +168,14 @@ const App: React.FC = () => {
                 <strong>10–20 minutes saved</strong>.
               </p>
               <p>
-                Over a month → hours of reclaimed time → Informed and up-to-date. 
+                Over a month → hours of reclaimed time → Informed and
+                up-to-date.
               </p>
             </div>
           </div>
         </section>
 
-                {/* PRICING */}
+        {/* PRICING */}
         <section id="pricing" className="ec-section">
           <div className="ec-section-inner">
             <h2>Simple, honest pricing</h2>
@@ -189,15 +185,13 @@ const App: React.FC = () => {
               <div className="ec-card ec-card-pricing">
                 <h3>Free</h3>
                 <p className="ec-price">$0</p>
-                <p className="ec-price-sub">3 days or 50 articles</p>
+                <p className="ec-price-sub">15 AI rewrites</p>
                 <ul className="ec-price-features">
                   <li>Text-only reading</li>
-                  <li>5 AI rewrites</li>
-                  <li>No account</li>
+                  <li>Focus on meaning, not the layout noise</li>
+                  <li>Upgrade anytime</li>
                 </ul>
-                <button className="ec-btn ec-btn-outline">
-                  Coming soon
-                </button>
+                <button className="ec-btn ec-btn-outline">Start Now</button>
               </div>
 
               {/* PRO – live Stripe link */}
@@ -245,8 +239,8 @@ const App: React.FC = () => {
           <div className="ec-section-inner">
             <h2>From cracking eggs to cracking noise</h2>
             <p>
-              Eggcracker began as a kitchen tool in Las Vegas in 2007.  
-              Today it cleans up reading articles on the internet with no eggshells.
+              Eggcracker began as a kitchen tool in Las Vegas in 2007. Today it
+              cleans up reading articles on the internet with no eggshells.
             </p>
           </div>
         </section>
