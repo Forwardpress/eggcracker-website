@@ -66,3 +66,38 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.ec-credits-badge {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(241, 245, 249, 0.7);
+  font-size: 12px;
+  color: #0f172a;
+}
+
+.ec-credits-badge__plan {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.ec-credits-badge__meter {
+  font-weight: 500;
+}
+
+.ec-credits-badge--low {
+  border-color: #facc15;
+  background: #fef9c3;
+}
+
+.ec-credits-badge--empty {
+  border-color: #f87171;
+  background: #fee2e2;
+}
+
+.ec-credits-badge__cta {
+  font-size: 11px;
+  opacity: 0.8;
+}

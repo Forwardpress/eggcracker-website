@@ -430,6 +430,115 @@ body {
   opacity: 1;
 }
 
+/* Pro header strip */
+.ec-pro-header {
+  max-width: 1120px;
+  margin: 2.5rem auto 1.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: linear-gradient(135deg, #f9fafb 0%, #eef2ff 40%, #fdf2e9 100%);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.ec-pro-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #fefce8 0, #fde68a 40%, #f97316 90%);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ec-pro-egg {
+  font-size: 1.2rem;
+}
+
+.ec-pro-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ec-pro-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #111827;
+}
+
+.ec-pro-sub {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.ec-pro-meta {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .ec-pro-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ec-pro-meta {
+    margin-left: 0;
+    white-space: normal;
+  }
+}
+
+.ec-credits-badge {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(241, 245, 249, 0.8);
+  font-size: 12px;
+  line-height: 1.3;
+  color: #0f172a;
+}
+
+.ec-credits-badge__plan {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+.ec-credits-badge__meter {
+  font-weight: 500;
+}
+
+.ec-credits-badge__cta {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.ec-credits-badge--low {
+  border-color: #facc15;
+  background: #fef9c3;
+}
+
+.ec-credits-badge--empty {
+  border-color: #f87171;
+  background: #fee2e2;
+}
+
+.ec-credits-wrap {
+  margin-top: 8px;
+}
+
 /* Responsive tweaks */
 @media (max-width: 900px) {
   .ec-strip-inner {

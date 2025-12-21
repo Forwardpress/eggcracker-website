@@ -1,6 +1,42 @@
 import React from "react";
 import "./styles.css";
 
+// ---- Billing helper (server-created Stripe Checkout session) ----
+const API_BASE =
+  (import.meta as any).env?.VITE_API_BASE_URL ||
+  "https://eggcracker-server-1.onrender.com";
+
+function getOrCreateUserId() {
+  const key = "eggcracker_user_id";
+  let id = localStorage.getItem(key);
+  if (!id) {
+    id = globalThis.crypto?.randomUUID?.() || `anon_${Date.now()}`;
+    localStorage.setItem(key, id);
+  }
+  return id;
+}
+
+async function startCheckout(plan: "pro" | "pro_plus") {
+  const userId = getOrCreateUserId();
+
+  const r = await fetch(`${API_BASE}/billing/checkout`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ plan, userId }),
+  });
+
+  const data = await r.json().catch(() => ({}));
+
+  if (!r.ok || !data?.url) {
+    console.error("Checkout error:", data);
+    alert("Sorry — checkout failed. Please try again in a moment.");
+    return;
+  }
+
+  // Redirect to Stripe Checkout
+  window.location.href = data.url;
+}
+
 const App: React.FC = () => {
   return (
     <div className="ec-site">
@@ -40,11 +76,19 @@ const App: React.FC = () => {
               </p>
 
               <div className="ec-hero-cta">
-                <button className="ec-btn ec-btn-primary">
-                  Add Eggcracker to Chrome
-                </button>
+                {/* PRIMARY: Free install via Chrome Web Store */}
                 <a
-                  href="https://buy.stripe.com/bJebJ1bLb8TU9yU9PJf7i00"
+                  href="https://chromewebstore.google.com/detail/YOUR-EGGCRACKER-ID-HERE"
+                  className="ec-btn ec-btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Add Eggcracker to Chrome
+                </a>
+
+                {/* SECONDARY: Same free path, softer promise */}
+                <a
+                  href="https://chromewebstore.google.com/detail/YOUR-EGGCRACKER-ID-HERE"
                   className="ec-btn ec-btn-secondary"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,9 +97,7 @@ const App: React.FC = () => {
                 </a>
               </div>
 
-              <p className="ec-hero-micro">
-                No account · No ads · No tracking
-              </p>
+              <p className="ec-hero-micro">No account · No ads · No tracking</p>
             </div>
 
             <div className="ec-hero-card">
@@ -165,8 +207,7 @@ const App: React.FC = () => {
             <div className="ec-value-stats">
               <h3>Small price, big upside</h3>
               <p>
-                Five articles a day →{" "}
-                <strong>10–20 minutes saved</strong>.
+                Five articles a day → <strong>10–20 minutes saved</strong>.
               </p>
               <p>
                 Over a month → hours of reclaimed time — staying informed
@@ -192,10 +233,17 @@ const App: React.FC = () => {
                   <li>Focus on meaning, not the layout noise</li>
                   <li>Upgrade anytime</li>
                 </ul>
-                <button className="ec-btn ec-btn-outline">Start Now</button>
+                <a
+                  href="https://chromewebstore.google.com/detail/YOUR-EXTENSION-ID"
+                  className="ec-btn ec-btn-outline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Start Now
+                </a>
               </div>
 
-              {/* PRO – live Stripe link */}
+              {/* PRO – server checkout (metadata + entitlement works) */}
               <div className="ec-card ec-card-pricing ec-card-featured">
                 <div className="ec-pill">Most popular</div>
                 <h3>Pro</h3>
@@ -207,28 +255,29 @@ const App: React.FC = () => {
                   <li>Priority queue</li>
                 </ul>
 
-                <a
-                  href="https://buy.stripe.com/bJebJ1bLb8TU9yU9PJf7i00"
+                <button
                   className="ec-btn ec-btn-primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() => startCheckout("pro")}
                 >
                   Get Eggcracker Pro
-                </a>
+                </button>
               </div>
 
-              {/* PRO+ */}
+              {/* PRO+ – server checkout */}
               <div className="ec-card ec-card-pricing">
                 <h3>Pro+</h3>
-                <p className="ec-price">Coming soon</p>
+                <p className="ec-price">$5.99</p>
                 <p className="ec-price-sub">per month</p>
                 <ul className="ec-price-features">
                   <li>Everything in Pro</li>
-                  <li>Unlimited AI rewrites</li>
+                  <li>800 AI rewrites</li>
                   <li>“Just the Facts” mode</li>
                 </ul>
-                <button className="ec-btn ec-btn-outline" disabled>
-                  Not yet available
+                <button
+                  className="ec-btn ec-btn-outline"
+                  onClick={() => startCheckout("pro_plus")}
+                >
+                  Get Eggcracker Pro+
                 </button>
               </div>
             </div>
@@ -240,8 +289,9 @@ const App: React.FC = () => {
           <div className="ec-section-inner">
             <h2>From cracking eggs to cracking noise</h2>
             <p>
-              Eggcracker began as a kitchen tool in Las Vegas in 2007. Cracking uncooked eggs perfectly, every time. Today it
-              cleans up reading articles on the internet with no eggshells.
+              Eggcracker began as a kitchen tool in Las Vegas in 2007. Cracking
+              uncooked eggs perfectly, every time. Today it cleans up reading
+              articles on the internet with no eggshells.
             </p>
           </div>
         </section>
