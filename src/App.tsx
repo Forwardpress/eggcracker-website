@@ -1,55 +1,6 @@
 import React from "react";
 import "./styles.css";
 
-// ====================================================
-// Billing helper (server-created Stripe Checkout session)
-// ====================================================
-
-const API_BASE =
-  (import.meta as any).env?.VITE_API_BASE_URL ||
-  "https://eggcracker-server-1.onrender.com";
-
-/**
- * Creates a stable anonymous user id so Stripe metadata is never empty.
- * (Later: replace with real auth user id or email-based id.)
- */
-function getOrCreateUserId() {
-  const key = "eggcracker_user_id";
-  let id = localStorage.getItem(key);
-  if (!id) {
-    id = globalThis.crypto?.randomUUID?.() || `anon_${Date.now()}`;
-    localStorage.setItem(key, id);
-  }
-  return id;
-}
-
-async function startCheckout(plan: "pro" | "pro_plus") {
-  try {
-    const userId = getOrCreateUserId();
-
-    const r = await fetch(`${API_BASE}/billing/checkout`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "omit",
-      body: JSON.stringify({ plan, userId }),
-    });
-
-    const data = await r.json().catch(() => ({}));
-
-    if (!r.ok || !data?.url) {
-      console.error("Checkout error:", data);
-      alert("Sorry — checkout failed. Please try again in a moment.");
-      return;
-    }
-
-    // Redirect to Stripe Checkout
-    window.location.href = data.url;
-  } catch (err) {
-    console.error("Checkout exception:", err);
-    alert("Sorry — checkout failed. Please try again in a moment.");
-  }
-}
-
 const App: React.FC = () => {
   return (
     <div className="ec-site">
