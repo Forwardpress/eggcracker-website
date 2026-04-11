@@ -99,7 +99,6 @@ const App: React.FC = () => {
                   Add Eggcracker to Chrome
                 </a>
 
-               
               </div>
 
               <p className="ec-hero-micro">No account · No ads · No tracking</p>
@@ -203,8 +202,7 @@ const App: React.FC = () => {
               <ul className="ec-value-list">
                 <li>“Time is money.” — Benjamin Franklin</li>
                 <li>
-                  “If you spend too much time thinking, you’ll never get it
-                  done.” — Bruce Lee
+                  “Your time is limited, so don't waste it living someone else's life." — Steve Jobs 
                 </li>
               </ul>
             </div>
