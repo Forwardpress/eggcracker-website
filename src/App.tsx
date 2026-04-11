@@ -258,7 +258,6 @@ const App: React.FC = () => {
                   <li>400 AI rewrites</li>
                   <li>Priority queue</li>
                 </ul>
-                
               </div>
 
               {/* PRO+ – server checkout */}
@@ -270,7 +269,6 @@ const App: React.FC = () => {
                   <li>800 AI rewrites</li>
                   <li>“Just the Facts” mode</li>
                 </ul>
-
               </div>
             </div>
           </div>
