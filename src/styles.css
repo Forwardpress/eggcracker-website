@@ -146,13 +146,16 @@ body {
 }
 
 .ec-btn-primary {
-  background: #111827;
-  color: #f9fafb;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+  background: #ffffff;
+  color: #0b1f2e;
+  border: 1px solid #0b1f2e;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .ec-btn-primary:hover {
   transform: translateY(-1px);
+  background: #0b1f2e;
+  color: #ffffff;
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.32);
 }
 
