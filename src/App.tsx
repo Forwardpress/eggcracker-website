@@ -67,7 +67,7 @@ const App: React.FC = () => {
 
             <div className="ec-logo-text">
               <span className="ec-logo-name">Eggcracker</span>
-              <span className="ec-logo-tagline">Clean breaks. Clear news.</span>
+              <span className="ec-logo-tagline">Crisp, Clean, and Clear news.</span>
             </div>
           </div>
 
@@ -81,7 +81,7 @@ const App: React.FC = () => {
         <section className="ec-hero">
           <div className="ec-hero-inner">
             <div className="ec-hero-copy">
-              <h1>A small price to pay for time saved.</h1>
+              <h1>Time is our most valuable asset.</h1>
               <p className="ec-hero-subtitle">
                 Get clear news now — Eggcracker turns messy, ad-heavy articles
                 into clean, distraction-free reading with zero tracking and
@@ -91,7 +91,7 @@ const App: React.FC = () => {
               <div className="ec-hero-cta">
                 {/* PRIMARY: Free install via Chrome Web Store */}
                 <a
-                  href="https://chromewebstore.google.com/detail/YOUR-EGGCRACKER-ID-HERE"
+                  href="https://chromewebstore.google.com/search/Eggcracker%20Reader"
                   className="ec-btn ec-btn-primary"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -99,15 +99,7 @@ const App: React.FC = () => {
                   Add Eggcracker to Chrome
                 </a>
 
-                {/* SECONDARY: Same free path, softer promise */}
-                <a
-                  href="https://chromewebstore.google.com/detail/YOUR-EGGCRACKER-ID-HERE"
-                  className="ec-btn ec-btn-secondary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Try Free for 3 Days
-                </a>
+               
               </div>
 
               <p className="ec-hero-micro">No account · No ads · No tracking</p>
@@ -127,7 +119,7 @@ const App: React.FC = () => {
                   <strong>Clarity:</strong> “Just the Facts” mode (Pro+).
                 </li>
                 <li>
-                  <strong>Privacy:</strong> No tracking, no selling your data.
+                  <strong>Privacy:</strong> No tracking, or selling your data.
                 </li>
               </ul>
               <p className="ec-hero-card-foot"></p>
@@ -236,18 +228,18 @@ const App: React.FC = () => {
             <h2>Simple, honest pricing</h2>
 
             <div className="ec-pricing-grid">
-              {/* FREE */}
+              {/* Get Started */}
               <div className="ec-card ec-card-pricing">
-                <h3>Free</h3>
+                <h3>Get Started</h3>
                 <p className="ec-price">$0</p>
-                <p className="ec-price-sub">15 AI rewrites</p>
+                <p className="ec-price-sub">10 AI rewrites</p>
                 <ul className="ec-price-features">
                   <li>Text-only reading</li>
                   <li>Focus on meaning, not the layout noise</li>
                   <li>Upgrade anytime</li>
                 </ul>
                 <a
-                  href="https://chromewebstore.google.com/detail/YOUR-EXTENSION-ID"
+                  href="https://chromewebstore.google.com/search/Eggcracker%20Reader"
                   className="ec-btn ec-btn-outline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -260,7 +252,6 @@ const App: React.FC = () => {
               <div className="ec-card ec-card-pricing ec-card-featured">
                 <div className="ec-pill">Most popular</div>
                 <h3>Pro</h3>
-                <p className="ec-price">$2.99</p>
                 <p className="ec-price-sub">per month</p>
                 <ul className="ec-price-features">
                   <li>Unlimited text-only reading</li>
@@ -279,7 +270,6 @@ const App: React.FC = () => {
               {/* PRO+ – server checkout */}
               <div className="ec-card ec-card-pricing">
                 <h3>Pro+</h3>
-                <p className="ec-price">$5.99</p>
                 <p className="ec-price-sub">per month</p>
                 <ul className="ec-price-features">
                   <li>Everything in Pro</li>
