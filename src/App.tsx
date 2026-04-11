@@ -200,10 +200,8 @@ const App: React.FC = () => {
                 Two reminders for people who understand momentum:
               </p>
               <ul className="ec-value-list">
-                <li>“Time is money.” — Benjamin Franklin</li>
-                <li>
-                  “Your time is limited, so don't waste it living someone else's life." — Steve Jobs 
-                </li>
+                <li>“Time is money.” – Benjamin Franklin</li>
+                <li>“Your time is limited, so don't waste it living someone else's life.” – Steve Jobs</li>
               </ul>
             </div>
 
