@@ -258,13 +258,7 @@ const App: React.FC = () => {
                   <li>400 AI rewrites</li>
                   <li>Priority queue</li>
                 </ul>
-
-                <button
-                  className="ec-btn ec-btn-primary"
-                  onClick={() => startCheckout("pro")}
-                >
-                  Get Eggcracker Pro
-                </button>
+                
               </div>
 
               {/* PRO+ – server checkout */}
@@ -277,12 +271,6 @@ const App: React.FC = () => {
                   <li>“Just the Facts” mode</li>
                 </ul>
 
-                <button
-                  className="ec-btn ec-btn-outline"
-                  onClick={() => startCheckout("pro_plus")}
-                >
-                  Get Eggcracker Pro+
-                </button>
               </div>
             </div>
           </div>
