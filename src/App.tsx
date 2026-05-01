@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
             <div className="ec-logo-text">
               <span className="ec-logo-name">Eggcracker</span>
-              <span className="ec-logo-tagline">Crisp, Clean, and Clear news.</span>
+              <span className="ec-logo-tagline">Before you read somthing - test it.</span>
             </div>
           </div>
 
@@ -34,8 +34,7 @@ const App: React.FC = () => {
             <div className="ec-hero-copy">
               <h1>Silence the Noise and Read What Matters.</h1>
               <p className="ec-hero-subtitle">
-                Evaluating truth - one article at a time. Zero tracking and
-                <strong> “See the Kernel of Truth Results”</strong> summaries.
+                Evaluating truth - one article at a time. Because people don't trust what they read anymore”</strong> summaries.
               </p>
 
               <div className="ec-hero-cta">
