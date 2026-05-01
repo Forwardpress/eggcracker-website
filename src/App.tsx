@@ -32,10 +32,10 @@ const App: React.FC = () => {
         <section className="ec-hero">
           <div className="ec-hero-inner">
             <div className="ec-hero-copy">
-              <h1>Silence the Noise. Read What Matters.</h1>
+              <h1>Silence the Noise and Read What Matters.</h1>
               <p className="ec-hero-subtitle">
                 Evaluating truth - one article at a time. Zero tracking and
-                <strong>“Just the Facts”</strong> summaries.
+                <strong> “See the Kernel of Truth Results”</strong> summaries.
               </p>
 
               <div className="ec-hero-cta">
