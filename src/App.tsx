@@ -32,11 +32,10 @@ const App: React.FC = () => {
         <section className="ec-hero">
           <div className="ec-hero-inner">
             <div className="ec-hero-copy">
-              <h1>Time is our most valuable asset.</h1>
+              <h1>Silence the Noise. Read What Matters.</h1>
               <p className="ec-hero-subtitle">
-                Get clear news now — Eggcracker turns messy, ad-heavy articles
-                into clean, distraction-free reading with zero tracking and
-                optional <strong>“Just the Facts”</strong> summaries.
+                Evaluating truth - one article at a time. Zero tracking and
+                <strong>“Just the Facts”</strong> summaries.
               </p>
 
               <div className="ec-hero-cta">
@@ -56,20 +55,19 @@ const App: React.FC = () => {
             </div>
 
             <div className="ec-hero-card">
-              <h2 className="ec-hero-card-title">Your time matters</h2>
+              <h2 className="ec-hero-card-title">Every Article Runs Across 4 Standards</h2>
               <ul className="ec-hero-value-list">
                 <li>
-                  <strong>Time saved:</strong> Skip ads, pop-ups, autoplay, and
-                  clutter.
+                  <strong>Verification:</strong> Are claims supported by evidence?
                 </li>
                 <li>
-                  <strong>Focus:</strong> Read in a calm, single-column layout.
+                  <strong>Sourcing:</strong> Are sources credible?
                 </li>
                 <li>
-                  <strong>Clarity:</strong> “Just the Facts” mode (Pro+).
+                  <strong>Bias:</strong> Is the language shaping perception? mode (Pro+).
                 </li>
                 <li>
-                  <strong>Privacy:</strong> No tracking, or selling your data.
+                  <strong>Transparency:</strong> What's missing or left unsaid?
                 </li>
               </ul>
               <p className="ec-hero-card-foot"></p>
