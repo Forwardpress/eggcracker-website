@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
             <div className="ec-logo-text">
               <span className="ec-logo-name">Eggcracker</span>
-              <span className="ec-logo-tagline">Before you read something - test it.</span>
+              <span className="ec-logo-tagline">Before you read the news - test it.</span>
             </div>
           </div>
 
