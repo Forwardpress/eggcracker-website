@@ -34,7 +34,7 @@ const App: React.FC = () => {
             <div className="ec-hero-copy">
               <h1>Silence the Noise and Read What Matters.</h1>
               <p className="ec-hero-subtitle">
-                Evaluating truth - one article at a time. Because people don't trust what they read anymore”</strong> summaries.
+                Evaluating truth - one article at a time. Because people don't trust what they read anymore.”
               </p>
 
               <div className="ec-hero-cta">
