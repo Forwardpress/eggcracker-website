@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
             <div className="ec-logo-text">
               <span className="ec-logo-name">Eggcracker</span>
-              <span className="ec-logo-tagline">Before you read the news - test it.</span>
+              <span className="ec-logo-tagline">Think clearly in a noisy world.</span>
             </div>
           </div>
 
@@ -32,9 +32,9 @@ const App: React.FC = () => {
         <section className="ec-hero">
           <div className="ec-hero-inner">
             <div className="ec-hero-copy">
-              <h1>Silence the Noise and Read What Matters.</h1>
+              <h1>Become the most capable thinker in a noisy world.</h1>
               <p className="ec-hero-subtitle">
-                Evaluating truth - one article at a time. Because people don't trust what they read anymore.”
+                Eggcracker Reader transforms overwhelming news into structured analysis that helps you think clearly and stay informed.”
               </p>
 
               <div className="ec-hero-cta">
@@ -63,7 +63,7 @@ const App: React.FC = () => {
                   <strong>Sourcing:</strong> Are sources credible?
                 </li>
                 <li>
-                  <strong>Bias:</strong> Is the language shaping perception? mode (Pro+).
+                  <strong>Bias:</strong> Is the language shaping perception? 
                 </li>
                 <li>
                   <strong>Transparency:</strong> What's missing or left unsaid?
@@ -195,25 +195,16 @@ const App: React.FC = () => {
               {/* PRO – server checkout (metadata + entitlement works) */}
               <div className="ec-card ec-card-pricing ec-card-featured">
                 <div className="ec-pill">Most popular</div>
-                <h3>Pro</h3>
+                <h3>Reader Pro</h3>
                 <p className="ec-price-sub">per month</p>
                 <ul className="ec-price-features">
-                  <li>Unlimited text-only reading</li>
                   <li>400 AI rewrites</li>
-                  <li>Priority queue</li>
+                  <li>Full Eggcracker experience</li>
+                  <li>Built for daily readers</li>
                 </ul>
               </div>
 
-              {/* PRO+ – server checkout */}
-              <div className="ec-card ec-card-pricing">
-                <h3>Pro+</h3>
-                <p className="ec-price-sub">per month</p>
-                <ul className="ec-price-features">
-                  <li>Everything in Pro</li>
-                  <li>800 AI rewrites</li>
-                  <li>“Just the Facts” mode</li>
-                </ul>
-              </div>
+              
             </div>
           </div>
         </section>
