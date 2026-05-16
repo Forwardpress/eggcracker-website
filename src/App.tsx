@@ -34,7 +34,7 @@ const App: React.FC = () => {
             <div className="ec-hero-copy">
               <h1>Become the most capable thinker in a noisy world.</h1>
               <p className="ec-hero-subtitle">
-                Eggcracker Reader transforms overwhelming news into structured analysis that helps you think clearly and stay informed.”
+                Eggcracker Reader transforms cluttered, emotionally charged news into structured analysis that helps you think clearly, ask better questions, and stay informed without the burnout.”
               </p>
 
               <div className="ec-hero-cta">
