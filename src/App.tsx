@@ -94,7 +94,7 @@ const App: React.FC = () => {
               <span className="ec-strip-text">One click → pure text.</span>
             </div>
             <div className="ec-strip-item">
-              <span className="ec-strip-label">🧠 Clarity Mode (Pro+)</span>
+              <span className="ec-strip-label">🧠 Clarity Mode </span>
               <span className="ec-strip-text">
                 Who / What / When / Where / Why.
               </span>
@@ -133,7 +133,7 @@ const App: React.FC = () => {
               <div className="ec-step">
                 <div className="ec-step-number">3</div>
                 <h3>Read in pure text</h3>
-                <p>No ads. No scripts. Just your article.</p>
+                <p>No ads. No Pics. No Flash. No scripts. Just your article.</p>
               </div>
             </div>
           </div>
@@ -148,8 +148,8 @@ const App: React.FC = () => {
                 Two reminders for people who understand momentum:
               </p>
               <ul className="ec-value-list">
-                <li>“Time is money.” – Benjamin Franklin</li>
-                <li>“Your time is limited, so don't waste it living someone else's life.” – Steve Jobs</li>
+                <li>“A person who won't read has no advantage over one who can't read." – Mark Twain</li>
+                <li>“The unexamined life is not worth living.” – Socrates</li>
               </ul>
             </div>
 
