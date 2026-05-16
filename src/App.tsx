@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <section className="ec-hero">
           <div className="ec-hero-inner">
             <div className="ec-hero-copy">
-              <h1>Become the most capable thinker in a noisy world.</h1>
+              <h1>Keep up with the World without being consumed by it.</h1>
               <p className="ec-hero-subtitle">
                 Eggcracker Reader transforms cluttered, emotionally charged news into structured analysis that helps you think clearly, ask better questions, and stay informed without the burnout.”
               </p>
