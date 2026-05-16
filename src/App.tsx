@@ -169,7 +169,7 @@ const App: React.FC = () => {
         {/* PRICING */}
         <section id="pricing" className="ec-section">
           <div className="ec-section-inner">
-            <h2>Simple, honest pricing</h2>
+            <h2>Simple and Easy</h2>
 
             <div className="ec-pricing-grid">
               {/* Get Started */}
@@ -178,8 +178,8 @@ const App: React.FC = () => {
                 <p className="ec-price">$0</p>
                 <p className="ec-price-sub">10 AI rewrites</p>
                 <ul className="ec-price-features">
-                  <li>Text-only reading</li>
-                  <li>Focus on meaning, not the layout noise</li>
+                  <li>Full Eggcracker Reader experience</li>
+                  <li>See the meaning, not the layout noise</li>
                   <li>Upgrade anytime</li>
                 </ul>
                 <a
@@ -199,7 +199,7 @@ const App: React.FC = () => {
                 <p className="ec-price-sub">per month</p>
                 <ul className="ec-price-features">
                   <li>400 AI rewrites</li>
-                  <li>Full Eggcracker experience</li>
+                  <li>Full Eggcracker Reader experience</li>
                   <li>Built for daily readers</li>
                 </ul>
               </div>
